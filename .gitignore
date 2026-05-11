@@ -1,0 +1,12 @@
+/target/
+/.kitsunebi/
+
+# Live Minecraft data and local runtime state.
+/data/*
+/worlds/*
+/secrets/*
+!/secrets/.gitignore
+!/secrets/README.md
+
+# Manual artifacts are intentionally placed out of Git unless explicitly added.
+/plugins/manual/*/*.jar

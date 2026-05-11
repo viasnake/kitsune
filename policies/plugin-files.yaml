@@ -1,0 +1,4 @@
+plugins:
+  default:
+    ownership: unknown
+    action: observe-only

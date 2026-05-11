@@ -1,36 +1,13 @@
 # secrets
 
-This directory contains secrets that are used by the application.
+This directory is for local development placeholders only. Production secrets
+belong under `/etc/kitsunebi/secrets/` and must not be committed.
 
-**Note:** This directory is not tracked by git.
+RCON command execution reads `RCON_PASSWORD=...` from:
 
-## mysql.env
+- `/etc/kitsunebi/secrets/<target>.env`
+- `secrets/<target>.env`
+- `secrets/rcon.env`
 
-```plain
-CFG_MYSQL_USER=
-CFG_MYSQL_DATABASE=
-CFG_MYSQL_PASSWORD=
-```
-
-## restic.env
-
-```plain
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-RESTIC_REPOSITORY=
-RESTIC_PASSWORD=
-```
-
-## github.env
-
-```plain
-GITHUB_PERSONAL_ACCESS_TOKEN=
-```
-
-## sync.env
-
-```plain
-SSH_HOST=
-SSH_USER=
-SSH_PASSWORD=
-```
+Database, Redis, backup, and external service credentials are outside the
+kitsunebi Git boundary.

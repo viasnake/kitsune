@@ -1,0 +1,14 @@
+[package]
+name = "kitsunebi"
+version = "0.2.0"
+edition = "2024"
+description = "Operational tooling for MCPlayNetwork Minecraft instances"
+license = "MIT"
+
+[lib]
+name = "kitsunebi_core"
+path = "src/lib.rs"
+
+[[bin]]
+name = "kitsunebi"
+path = "src/main.rs"
